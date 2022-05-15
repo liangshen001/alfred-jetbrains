@@ -1,0 +1,31 @@
+{
+  "name": "@liangshen/alfred-jetbrains",
+  "version": "1.0.0",
+  "description": "Alfred workflow for Jetbrains",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "npm:scope:wangliang": "npm config set scope liangshen",
+    "publish:version:patch": "npm version patch && npm run npm:scope:wangliang && npm publish --access public ."
+  },
+  "keywords": [
+    "alfred",
+    "workflow",
+    "jetbrains",
+    "webstorm",
+    "idea",
+    "pycharm",
+    "intellij idea",
+    "alfy"
+  ],
+  "author": "Wangliang",
+  "license": "ISC",
+  "devDependencies": {
+    "alfy": "^1.0.0"
+  },
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
+}
