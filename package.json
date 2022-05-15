@@ -10,6 +10,18 @@
     "npm:scope:wangliang": "npm config set scope liangshen",
     "publish:version:patch": "npm version patch && npm run npm:scope:wangliang && npm publish --access public ."
   },
+  "bugs": {
+    "url": "https://github.com/liangshen001/alfred-jetbrains/issues"
+  },
+  "homepage": "https://github.com/liangshen001/alfred-jetbrains",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangshen001/alfred-jetbrains.git"
+  },
+  "author": {
+    "name": "Wangliang",
+    "email": "850598163@qq.com"
+  },
   "keywords": [
     "alfred",
     "workflow",
@@ -20,7 +32,6 @@
     "intellij idea",
     "alfy"
   ],
-  "author": "Wangliang",
   "license": "ISC",
   "devDependencies": {
     "alfy": "^1.0.0"
