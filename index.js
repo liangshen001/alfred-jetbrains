@@ -25,10 +25,9 @@ export async function invoke(app) {
                 return {
                     arg,
                     title,
-                    subtitle: arg,
-                    show: recentProjectMetaInfo.attributes.opened !== 'true'
+                    subtitle: arg
                 }
-            }).filter(i => i.show && i.title.toLowerCase().includes(alfy.input.toLowerCase()));
+            }).filter(i => i.title.toLowerCase().includes(alfy.input.toLowerCase()));
         alfy.output(items.reverse());
     }
 }
