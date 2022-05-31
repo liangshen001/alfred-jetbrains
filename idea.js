@@ -1,3 +1,2 @@
-import {invoke} from "./index.js";
-
-await invoke('IntelliJIdea')
+import { invoke } from "./index.js";
+await invoke('IntelliJIdea');

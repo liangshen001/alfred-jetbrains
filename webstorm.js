@@ -1,3 +1,2 @@
-import {invoke} from "./index.js";
-
-await invoke('WebStorm')
+import { invoke } from "./index.js";
+await invoke('WebStorm');
