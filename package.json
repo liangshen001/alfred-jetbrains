@@ -7,8 +7,9 @@
   "scripts": {
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
+    "build": "tsc",
     "npm:scope:wangliang": "npm config set scope liangshen",
-    "publish:version:patch": "npm version patch && npm run npm:scope:wangliang && npm publish --access public ."
+    "publish:version:patch": "npm run build && npm version patch && npm run npm:scope:wangliang && npm publish --access public ."
   },
   "bugs": {
     "url": "https://github.com/liangshen001/alfred-jetbrains/issues"
@@ -34,7 +35,10 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "xml-js": "^1.6.11",
-    "alfy": "^1.0.0"
+    "alfy": "^1.0.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2"
   }
 }
